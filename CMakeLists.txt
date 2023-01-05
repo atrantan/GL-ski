@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.1)
 project (NEIGE C CXX)
 
+# Compile C++ files with C++14
+set (CMAKE_CXX_STANDARD 17)
+
 # Specify where to put all the RUNTIME target files when built.
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
